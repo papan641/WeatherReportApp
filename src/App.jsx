@@ -1,17 +1,21 @@
 import Button from '@mui/material/Button';
+import SearchBox from './search_box/SearchBox.jsx'
 
 function App() {
-  let handleClick=() => {
+  let handleClick = () => {
     console.log("button was clicked");
   };
 
   return (
-    <>
-     <h1>Material UI Demo</h1>
-     <Button variant="contained" onClick={handleClick}>
-      Click me here
-     </Button>
-    </>
+    <div>
+      <h1>Material UI Demo</h1>
+      <Button variant="contained" onClick={handleClick}>
+        Click me here
+      </Button>
+
+    <SearchBox/>
+
+    </div>
   );
 }
 
