@@ -11,8 +11,7 @@ export default function InfoBox({ weatherData, error }) {
 
   return (
     <div className="info-box">
-      <h3>Weather Information</h3>
-      <p>City: {weatherData.name}</p>
+      <h3>Weather Information for {weatherData.name}</h3>
       <p>Temperature: {Math.round(weatherData.temp - 273.15)}°C</p>
       <p>Min Temperature: {Math.round(weatherData.tempMin - 273.15)}°C</p>
       <p>Max Temperature: {Math.round(weatherData.tempMax - 273.15)}°C</p>
